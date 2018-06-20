@@ -1,0 +1,62 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1
+Relation:     q2
+Instances:    122
+Attributes:   7
+              A1
+              A2
+              A3
+              A4
+              A5
+              A6
+              class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+JRIP rules:
+===========
+
+(A2 = 2) and (A1 = 1) and (A5 = 2) => class=1 (8.0/0.0)
+(A2 = 1) and (A5 = 1) => class=1 (12.0/0.0)
+(A2 = 2) and (A5 = 1) => class=1 (10.0/0.0)
+(A5 = 3) and (A4 = 1) => class=1 (8.0/1.0)
+(A5 = 2) and (A2 = 1) => class=1 (9.0/0.0)
+(A2 = 2) and (A6 = 2) => class=1 (11.0/4.0)
+(A5 = 3) and (A2 = 1) => class=1 (4.0/0.0)
+ => class=0 (60.0/3.0)
+
+Number of Rules : 8
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         390               90.2778 %
+Incorrectly Classified Instances        42                9.7222 %
+Kappa statistic                          0.8053
+Mean absolute error                      0.1314
+Root mean squared error                  0.277 
+Relative absolute error                 26.2643 %
+Root relative squared error             55.3461 %
+Total Number of Instances              432     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.912    0.105    0.886      0.912    0.899      0.806    0.938     0.879     0
+                 0.895    0.088    0.919      0.895    0.907      0.806    0.938     0.942     1
+Weighted Avg.    0.903    0.096    0.903      0.903    0.903      0.806    0.938     0.912     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 186  18 |   a = 0
+  24 204 |   b = 1
+
